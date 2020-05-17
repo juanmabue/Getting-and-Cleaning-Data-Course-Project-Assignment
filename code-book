@@ -1,0 +1,43 @@
+About R script
+File with R code "run_analysis.R" perform 5 following steps (in accordance assigned task of course work)
+
+About variables:
+1. Merging the training and the test sets to create one data set.
+2. Extracting only the measurements on the mean and standard deviation for each measurement.
+3. Using descriptive activity names to name the activities in the data set
+4. Appropriately labeling the data set with descriptive activity names.
+5. Creating a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+1) 
+
+a. Read and check data structure for all files:  
+test/subject_test.txt : 2947 rows, 1 column
+test/subject_test.txt : 2947 rows, 1 column
+test/y_train.txt : 7352 rows, 1 columns
+test/X_train.txt : 7352 rows, 561 columns
+test/X_test.txt : 2947 rows, 561 columns
+features.txt : 561 rows, 2 columns
+activity_labels.txt : 6 rows, 2 columns
+
+b. Read and Assign each data to variables
+C.  Merges the training and the test sets to create one data set
+    X (10299 rows, 561 columns) 
+    Y (10299 rows, 1 column) 
+    Subject (10299 rows, 1 column) 
+    Merged_Data (10299 rows, 563 column)
+
+2) Extracts only the measurements on the mean and standard deviation for each variable.
+
+3 & 4). Code column in TidyData renamed into activities
+All Acc in column’s name replaced by Accelerometer
+All Gyro in column’s name replaced by Gyroscope
+All BodyBody in column’s name replaced by Body
+All Mag in column’s name replaced by Magnitude
+All start with character f in column’s name replaced by Frequency
+All start with character t in column’s name replaced by Time
+
+5) MyData (10299 rows, 88 columns) is created by subsetting All_Data, selecting only columns: subject, code and the measurements on the mean and standard deviation (std) for each measurement
+Uses descriptive activity names to name the activities in the data set
+Entire numbers in code column of the MyData replaced with corresponding activity taken from second column of the activities variable
+
+
