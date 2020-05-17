@@ -1,0 +1,41 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f0\fs24 \cf0 Book\
+File: run_analysis.R\
+\
+Read and check data structure for all files. \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \
+test/subject_test.txt : 2947 rows, 1 column\
+test/subject_test.txt : 2947 rows, 1 column\
+test/y_train.txt : 7352 rows, 1 columns\
+ test/X_train.txt : 7352 rows, 561 columns\
+test/X_test.txt : 2947 rows, 561 columns\
+features.txt : 561 rows, 2 columns\
+activity_labels.txt : 6 rows, 2 columns\
+\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 Rad and Assign each data to variables\
+\
+\
+Merges the training and the test sets to create one data set\
+X (10299 rows, 561 columns) \
+Y (10299 rows, 1 column) \
+Subject (10299 rows, 1 column) \
+Merged_Data (10299 rows, 563 column)\
+\
+Extracts only the measurements on the mean and standard deviation for each variable.\
+\
+MyData (10299 rows, 88 columns) is created by subsetting All_Data, selecting only columns: subject, code and the measurements on the mean and standard deviation (std) for each measurement\
+\
+Uses descriptive activity names to name the activities in the data set\
+Entire numbers in code column of the MyData replaced with corresponding activity taken from second column of the activities variable\
+\
+\
+}
